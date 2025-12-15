@@ -15,7 +15,7 @@ while True:
 
         with open("todos.txt", "a") as file:
             file.writelines(todo)
-    elif user_action.startswith("show"):
+    elif user_action.startswith("show"): 
         todos = get_todos("todos.txt")
         for index, item in enumerate(todos):
             print(f" {index +1} - {item}")

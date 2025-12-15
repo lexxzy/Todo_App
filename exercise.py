@@ -1,4 +1,5 @@
+import webbrowser
 
-while True:
-    name = input("what is your name? ")
-    print(name.capitalize())
+user_input = input("Enter a URL: ")
+
+webbrowser.open("https://www.google.com/search?q=" + user_input)
