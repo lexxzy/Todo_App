@@ -17,5 +17,6 @@ window = sg.Window("File and Folder Selector", layout=[
     [inpu2, choose2],
     [compress_button]
 ])
-window.read()
+while True:
+    event,value =    window.read()
 window.close()
